@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Int Q</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="top">
+        <h1>Day 1</h1>
+        <div>
+            <h3>Q1- Difference between flex row and column</h3>
+            <p>flexbox was designed for layout in one dimension - either a row or a column
+            <ul> We have more direction is flex
+                <li>row</li>
+                <li>column</li>
+                <li>row-reverse</li>
+                <li>column-reverse</li>
+            </ul>
+            </p>
+            <p>row - flex row is basic direction of flex where we arrenge our data or content in horizantal direction.
+                row is default flex direction</p>
+            <p>column - flex column is also a direction of flex where we arrenge our data or content in virtical
+                direction.</p>
+        </div>
+        <div>
+            <h3>Q2- Explain inline, internal and exterenl stylesheet</h3>
+            <p>When you specify more than one CSS rule to an element, the style for that item follows the cascading
+                rule. Number one has the highest priority:</p>
+            <ul>
+                <li>Inline style</li>
+                <li>Internal</li>
+                <li>External stylesheets</li>
+            </ul>
+            <p>Inline Style- The inline CSS style, defined by using the style attribute, overrides the style declared on
+                the internal or external stylesheet for that element.</p>
+            <p>Internal Style- Another way to include CSS in HTML is to use an internal stylesheet. It contains CSS
+                rules for the entire page. The &lt;style&gt; element contains a block of styling rules and is placed in
+                the &lt;head&gt; element of HTML files.</p>
+            <p>External Style- An external CSS style sheet is a separate file that contains a list of CSS rules and has
+                the .css extension. You need to link it to an HTML document.</p>
+        </div>
+        <div>
+            <h3>Q3- Justify-content allows you do what?</h3>
+            <ul>There is more property justify-content have
+                <li>Center</li>
+                <li>flex-Start</li>
+                <li>Flex-End</li>
+                <li>Space-between</li>
+                <li>Space-around</li>
+                <li>Space-evenly</li>
+            </ul>
+            <p>The CSS justify-content property defines how the browser distributes space between and around content
+                items along the main-axis of a flex container, and the inline axis of a grid container</p>
+            <p>The alignment is done after the lengths and auto margins are applied, meaning that, if in a Flexbox
+                layout there is at least one flexible element, with flex-grow different from 0, it will have no effect
+                as there won't be any available space.</p>
+        </div>
+        <div>
+            <h3>Q4- Differnce between absolute and relative positioning</h3>
+            <p>Relative - the element is positioned relative to its normal position. </p>
+            <p>Absolute - the element is positioned absolutely to its first positioned parent. Absolute positioning
+                allows you to place your element precisely where you want it.</p>
+        </div>
+        <div>
+            <h3>Q5- What is grid-template-columns used for?</h3>
+            <p>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.The
+                values are a space separated list, where each value specifies the size of the respective column.</p>
+        </div>
+        <div>
+            <h3>Q6- What is z-index in CSS?</h3>
+            <p>Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with
+                a higher index will be placed on top of elements with a lower index. Note: Z index only works on
+                positioned elements</p>
+        </div>
+        <div>
+            <h3>Q7- What is difference between padding and margin?</h3>
+            <p>Padding- Padding is the space between the content and the border of an element. Padding is valuable in
+                making additional space inside an element, keeping it at a set distance from other aspects of a website.
+                Using padding is extremely beneficial when you need to separate text boxes and images while also keeping
+                them aligned</p>
+            <p>Margin- Margin is the space around the border of an element. The margin surrounding an element will
+                inform the web browser being used of how much space should be left between independent elements and the
+                external margin of the website's page. Margins can also be used to keep different elements an equal
+                distance apart.</p>
+        </div>
+    </section>
+    <section>
+        <h1>Day2</h1>
+        <div>
+            <h3>Q1- What is box sizing?</h3>
+            <p>By default in the CSS box model, the width and height you assign to an element is applied only to the
+                element's content box. If the element has any border or padding, this is then added to the width and
+                height to arrive at the size of the box that's rendered on the screen. This means that when you set
+                width and height, you have to adjust the value you give to allow for any border or padding that may be
+                added. For example, if you have four boxes with width: 25%;, if any has left or right padding or a left
+                or right border, they will not by default fit on one line within the constraints of the parent
+                container.</p>
+        </div>
+        <div>
+            <h3>Q2- What is animation delay?</h3>
+            <p>The animation-delay CSS property specifies the amount of time to wait from applying the animation to an
+                element before beginning to perform the animation. The animation can start later, immediately from its
+                beginning, or immediately and partway through the animation.</p>
+        </div>
+        <div>
+            <h3>Q3- Which Property you will use to merge cells vertically in grid?</h3>
+            <p>grid-column property.</p>
+
+            <pre>
+                syntax: 
+                in parent
+                    display: grid;
+                    grid-column-templet repeat(3, 1fr):
+                    grid-gap: 1rem;
+
+                For Child or element you want to merge
+                    grid-row-start: 1;   starting value
+                    grid-row-end: 4;   ending value
+                 
+                 Output: 
+
+            </pre>
+            <aside class="grid">
+                <div id="item1" class="item">Item-1</div>
+                <div id="item2" class="item">Item-2</div>
+                <div id="item3" class="item">Item-3</div>
+                <div id="item4" class="item">Item-4</div>
+                <div id="item5" class="item">Item-5</div>
+                <div id="item6" class="item">Item-6</div>
+
+            </aside>
+        </div>
+        <div>
+            <h3>Q4- Which Property you will use to merge cells horizantal in grid?</h3>
+            <p>grid-column property.</p>
+
+            <pre>
+                syntax: 
+                in parent
+                    display: grid;
+                    grid-column-templet repeat(3, 1fr):
+                    grid-gap: 1rem;
+
+                For Child or element you want to merge
+                    grid-column-start: 1;   starting value
+                    grid-column-end: 4;   ending value
+                 
+                 Output: 
+
+            </pre>
+            <aside class="grid">
+                <div id="box1" class="item">Item-1</div>
+                <div id="box2" class="item">Item-2</div>
+                <div id="box3" class="item">Item-3</div>
+                <div id="box4" class="item">Item-4</div>
+                <div id="box5" class="item">Item-5</div>
+                <div id="box6" class="item">Item-6</div>
+
+            </aside>
+        </div>
+        <div>
+            <h3>Q5- What is the difference between display none and visibility hidden?</h3>
+            <p>visibility:hidden - hides the element, but it still takes up space in the layout.</p>
+            <p>display:none - removes the element from the document. It does not take up any space.</p>
+        </div>
+    </section>
+    <section>
+        <h1>Day3</h1>
+        <div>
+            <h3>Q1- Replicate the button of Masthead of Prepbytes</h3>
+            <pre>
+                syntax:
+                    .btn{
+                        background-color: #00a5ec;
+                        border-radius: 8px;
+                        border: none;
+                        padding: 12px 52px;
+                        color: #fff;
+                        cursor: pointer;
+                        text-align: center;
+                        border-radius: 4px;
+                    }
+
+                    Output:
+            </pre>
+            <button class="btn">Know More</button>
+        </div>
+        <div>
+            <h3>Q2- Write a text and add any google fonts</h3>
+            <p class="font">This is the text is example of google fonts</p>
+        </div>
+        <div>
+            <h3>Q3- Create a box and increase its width on hover, add transition on hover</h3>
+            <pre>
+                syntax: 
+                    .midbox{
+                        height: 100px;
+                        width: 100px;
+                        background-color: blanchedalmond;
+                        border: 2px solid yellow;
+                        margin: 0px auto;
+                        transition: all 3s ease;
+                    }
+                    midbox:hover{
+                        width: 400px;
+                    }
+            </pre>
+            <div class="midbox"></div>
+        </div>
+        <div>
+            <h3>Q4- Create a circle using border radius</h3>
+            <pre>
+                syntax:
+                    border-radius: 50%;
+                
+                Output:
+            </pre>
+            <div class="circle"></div>
+        </div>
+        <div>
+            <h3>Q5- Write code to show implementation of Media Queries</h3>
+            <pre>
+                syntax:
+                given the size of making resposive thing to see the use just 
+                set the width on 300px and you have output
+
+                @media screen and (min-width: 300px) and (max-width: 500px)     
+                @media screen and (min-width: 300px) and (max-width: 500px){
+                    .medya{
+                        height: 100px;
+                        width: 500px;
+                        background-color: lightgreen;
+                        border: 4px solid gray;
+                    }
+                }
+
+                Output:
+            </pre>
+            <div class="medya">
+            </div>
+        </div>
+        <div>
+            <h3>Q6- Write code to show any animation example</h3>
+            <pre>
+                Syntax:
+                .box{
+                    height: 100px;
+                    width: 100px;
+                    background-color: lavender;
+                    border: 2px solid firebrick;
+                    animation: trunme 3s infinite alternate;
+                }
+                @keyframes trunme {
+                    100%{
+                        transform: skewX(130deg);
+                    }
+                }
+
+                OutPut:
+            </pre>
+            <div class="content">
+                Animation wal thing
+                <div class="box"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Day4</h1>
+        <div>
+            <h3>Q1- Create a Masthead -add background image, put the text at the center, with button below it</h3>
+            <div class="Mas">
+                <img src="./IMG/laptop.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+                <button class="Btn">Just Show</button>
+            </div>
+        </div>
+        <div>
+            <h3>Q2- Create Header - left side have logo and right side will have 4 button</h3>
+            <header>
+                <nav class="navigation">
+                    <img src="./IMG/logo-2150297.png" alt="boll">
+                    <ul>
+                        <li class="mli"><button class="bbtn">button-1</button></li>
+                        <li class="mli"><button class="bbtn">button-2</button></li>
+                        <li class="mli"><button class="bbtn">button-3</button></li>
+                        <li class="mli"><button class="bbtn">button-4</button></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <h3>Q3- Create 3 card of height & width 200px with texts in it. the card should be horizantally placed
+                horizantal in web view and vertical in mobile view</h3>
+            <div class="regrid">
+                <div class="gitem">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="gitem">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="gitem">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="gitem">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Q4- Create a button linke Login and SignUp button on Prepbytes Website.</h3>
+            <h4> If Mobile: button color should be green and they should be below each other.</h4>
+            <h4> If iPad: button color should be red and they should be below each othre.</h4>
+            <h4>If desktop: button color should be blue and they sholud be side-by-side each other</h4>
+            <div class="buttons">
+                <button class="bn">Login</button>
+                <button class="bn">SignUp</button>
+            </div>
+        </div>
+        <div>
+            <h3>Q5- Write code to show implementation of flex</h3>
+            <div class="container">
+                <div class="boc"></div>
+                <div class="boc"></div>
+                <div class="boc"></div>
+                <div class="boc"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Day5</h1>
+        <div>
+            <h3>Q1- Show implementation of transition</h3>
+            <div class="midbox">
+            </div>
+        </div>
+        <div>
+            <h3>Q2- Show implementation of transform</h3>
+            <div class="minbox"></div>
+        </div>
+        <div>
+            <h3>Q3- Show implementation of grid</h3>
+            <div class="megrid">
+                <div class="boc"></div>
+                <div class="boc"></div>
+                <div class="boc"></div>
+                <div class="boc"></div>
+            </div>
+        </div>
+        <div>
+            <h3>Q4- What is CSS Combinators</h3>
+            <p>CSS combinators are explaining the relationship between two selectors. CSS selectors are the patterns
+                used to select the elements for style purpose. A CSS selector can be a simple selector or a complex
+                selector consisting of more than one selector connected using combinators. </p>
+            <ul type="circle">
+                <li>General Sibling selector (~)</li>
+                <li>Adjacent Sibling selector (+)</li>
+                <li>Child selector (>)</li>
+                <li>Descendant selector (space)</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Q5- What are the pseudo selector in css</h3>
+            <p>A kind of selector that identifies something not explicitly labelled in the document markup.</p>
+            <p>We have to types of Pesudo selector 1) Pseudo class selector 2) Pesudo element selector</p>
+            <ul>Class selector
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:visit</li>
+                <li>:focus</li>
+            </ul>
+            <ul>Element selector
+                <li>::Before</li>
+                <li>::After</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
